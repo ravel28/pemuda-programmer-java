@@ -1,4 +1,4 @@
-package com.pemudaprogrammer.items.entities;
+package com.pemudaprogrammer.categories.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

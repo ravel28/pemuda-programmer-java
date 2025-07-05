@@ -2,11 +2,10 @@ package com.pemudaprogrammer.items.itemlist.controllers;
 
 import com.pemudaprogrammer.cores.dtos.FilterPaginationDto;
 import com.pemudaprogrammer.cores.entities.ApiResponseEntity;
-import com.pemudaprogrammer.brand.brandList.dtos.CreateUpdateBrandDto;
-import com.pemudaprogrammer.items.itemlist.dtos.CreateUpdateCategoryDto;
+import com.pemudaprogrammer.categories.categorylist.dtos.CreateUpdateCategoryDto;
 import com.pemudaprogrammer.items.itemlist.dtos.CreateUpdateItemDto;
 import com.pemudaprogrammer.brand.brandList.services.BrandService;
-import com.pemudaprogrammer.items.itemlist.services.CategoryService;
+import com.pemudaprogrammer.categories.categorylist.services.CategoryService;
 import com.pemudaprogrammer.items.itemlist.services.ItemListService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

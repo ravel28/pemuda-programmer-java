@@ -1,6 +1,7 @@
 package com.pemudaprogrammer.items.entities;
 
 import com.pemudaprogrammer.brand.entities.BrandsEntity;
+import com.pemudaprogrammer.categories.entities.CategoriesEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 

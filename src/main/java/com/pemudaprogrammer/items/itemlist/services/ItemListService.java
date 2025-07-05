@@ -2,12 +2,12 @@ package com.pemudaprogrammer.items.itemlist.services;
 
 import com.pemudaprogrammer.cores.dtos.FilterPaginationDto;
 import com.pemudaprogrammer.brand.entities.BrandsEntity;
-import com.pemudaprogrammer.items.entities.CategoriesEntity;
+import com.pemudaprogrammer.categories.entities.CategoriesEntity;
 import com.pemudaprogrammer.items.entities.ItemEntity;
 import com.pemudaprogrammer.items.entities.ViewItemEntity;
 import com.pemudaprogrammer.items.itemlist.dtos.CreateUpdateItemDto;
 import com.pemudaprogrammer.brand.repositories.BrandRepository;
-import com.pemudaprogrammer.items.repositories.CategoryRepository;
+import com.pemudaprogrammer.categories.repositories.CategoryRepository;
 import com.pemudaprogrammer.items.repositories.ItemRepository;
 import com.pemudaprogrammer.items.repositories.ViewItemRepository;
 import lombok.extern.slf4j.Slf4j;
