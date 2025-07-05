@@ -33,22 +33,14 @@
 
 5. Setting aplication.propeties
    ```bash
-   $ change .env.example to .env and setting your port and database to get data
-   ```
-
-#### Running Database
-
-6. Create prisma typeScript ORM :
-   ```bash
-   $ yarn prisma:generate:schema
-   $ yarn prisma db push
+   $ set aplication.propeties to connect database
    ```
 
 #### Running Application
 
 7. Run the web server :
    ```bash
-   $ yarn run start:dev
+   $ mvn spring-boot:run
    ```
 
 #### Contributors
