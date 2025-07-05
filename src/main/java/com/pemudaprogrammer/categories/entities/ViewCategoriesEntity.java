@@ -8,7 +8,7 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name = "view_categoris", schema = "public")
+@Table(name = "view_categories", schema = "public")
 public class ViewCategoriesEntity {
     @Id
     @Column(name = "id_category")
