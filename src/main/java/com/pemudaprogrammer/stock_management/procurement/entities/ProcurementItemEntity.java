@@ -15,6 +15,9 @@ public class ProcurementItemEntity {
     @Column(name = "price", nullable = false)
     private Float price;
 
+    @Column(name = "qty", nullable = false)
+    private Integer qty;
+
     @ManyToOne
     @JoinColumn(name = "procurement_id", nullable = false)
     ProcurementEntity procurementEntity;
