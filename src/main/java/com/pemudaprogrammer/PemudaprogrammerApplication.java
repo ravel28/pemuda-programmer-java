@@ -9,7 +9,9 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 		"com.pemudaprogrammer.items.entities",
 		"com.pemudaprogrammer.brand.entities",
 		"com.pemudaprogrammer.categories.entities",
-		"com.pemudaprogrammer.users.entities"
+		"com.pemudaprogrammer.users.entities",
+		"com.pemudaprogrammer.supplier.entities",
+		"com.pemudaprogrammer.procurement.entities",
 })
 public class PemudaprogrammerApplication {
 
