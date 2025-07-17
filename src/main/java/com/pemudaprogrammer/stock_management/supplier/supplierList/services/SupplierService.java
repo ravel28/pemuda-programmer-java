@@ -1,9 +1,9 @@
-package com.pemudaprogrammer.supplier.supplierList.services;
+package com.pemudaprogrammer.stock_management.supplier.supplierList.services;
 
 import com.pemudaprogrammer.cores.dtos.FilterPaginationDto;
-import com.pemudaprogrammer.supplier.entities.SupplierEntity;
-import com.pemudaprogrammer.supplier.repositories.SupplierRepository;
-import com.pemudaprogrammer.supplier.supplierList.dtos.CreateUpdateSupplierDto;
+import com.pemudaprogrammer.stock_management.supplier.entities.SupplierEntity;
+import com.pemudaprogrammer.stock_management.supplier.repositories.SupplierRepository;
+import com.pemudaprogrammer.stock_management.supplier.supplierList.dtos.CreateUpdateSupplierDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

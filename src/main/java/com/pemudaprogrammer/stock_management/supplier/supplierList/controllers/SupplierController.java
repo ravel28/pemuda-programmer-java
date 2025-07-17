@@ -1,9 +1,9 @@
-package com.pemudaprogrammer.supplier.supplierList.controllers;
+package com.pemudaprogrammer.stock_management.supplier.supplierList.controllers;
 
 import com.pemudaprogrammer.cores.dtos.FilterPaginationDto;
 import com.pemudaprogrammer.cores.entities.ApiResponseEntity;
-import com.pemudaprogrammer.supplier.supplierList.dtos.CreateUpdateSupplierDto;
-import com.pemudaprogrammer.supplier.supplierList.services.SupplierService;
+import com.pemudaprogrammer.stock_management.supplier.supplierList.dtos.CreateUpdateSupplierDto;
+import com.pemudaprogrammer.stock_management.supplier.supplierList.services.SupplierService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

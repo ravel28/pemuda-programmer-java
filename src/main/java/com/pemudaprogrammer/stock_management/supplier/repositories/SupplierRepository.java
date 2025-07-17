@@ -1,6 +1,6 @@
-package com.pemudaprogrammer.supplier.repositories;
+package com.pemudaprogrammer.stock_management.supplier.repositories;
 
-import com.pemudaprogrammer.supplier.entities.SupplierEntity;
+import com.pemudaprogrammer.stock_management.supplier.entities.SupplierEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

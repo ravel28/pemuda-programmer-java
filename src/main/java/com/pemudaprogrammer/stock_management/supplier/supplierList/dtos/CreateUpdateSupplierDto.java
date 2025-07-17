@@ -1,4 +1,4 @@
-package com.pemudaprogrammer.supplier.supplierList.dtos;
+package com.pemudaprogrammer.stock_management.supplier.supplierList.dtos;
 
 import lombok.Data;
 

@@ -1,14 +1,18 @@
 package com.pemudaprogrammer.stock_management.procurement.entities;
 
-import com.pemudaprogrammer.supplier.entities.SupplierEntity;
+import com.pemudaprogrammer.stock_management.supplier.entities.SupplierEntity;
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDate;
 import java.util.Date;
 
 @Entity
 @Data
+@Builder
 @Table(name = "procurement", schema = "public")
 public class ProcurementEntity {
     @Id
@@ -45,13 +49,15 @@ public class ProcurementEntity {
     @Column(name = "payment_status")
     private String paymentStatus;
 
-    @Column(name = "created_at")
-    private Date created_at;
-
-    @Column(name = "updated_at")
-    private Date updatedAt;
-
     @OneToOne
     @JoinColumn(name = "supplier_id", nullable = false)
     SupplierEntity supplierEntity;
+
+    @CreationTimestamp
+    @Column(name= "created_at", nullable = false, updatable = false)
+    private Date created_at;
+
+    @UpdateTimestamp
+    @Column(name= "updated_at", nullable = false)
+    private Date updated_at;
 }
