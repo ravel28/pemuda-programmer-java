@@ -1,6 +1,7 @@
 package com.pemudaprogrammer.stock_management.procurement.entities;
 
 import com.pemudaprogrammer.stock_management.supplier.entities.SupplierEntity;
+import com.pemudaprogrammer.users.users.entities.UserEntity;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Data;
@@ -49,10 +50,6 @@ public class ProcurementEntity {
     @Column(name = "payment_status")
     private String paymentStatus;
 
-    @OneToOne
-    @JoinColumn(name = "supplier_id", nullable = false)
-    SupplierEntity supplierEntity;
-
     @CreationTimestamp
     @Column(name= "created_at", nullable = false, updatable = false)
     private Date created_at;
@@ -60,4 +57,12 @@ public class ProcurementEntity {
     @UpdateTimestamp
     @Column(name= "updated_at", nullable = false)
     private Date updated_at;
+
+    @OneToOne
+    @JoinColumn(name = "supplier_id", nullable = false)
+    SupplierEntity supplierEntity;
+
+    @OneToOne
+    @JoinColumn(name = "user_id", nullable = false)
+    UserEntity userEntity;
 }

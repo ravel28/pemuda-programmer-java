@@ -1,17 +1,21 @@
-package com.pemudaprogrammer.users.entities;
+package com.pemudaprogrammer.users.users.entities;
 
+import com.pemudaprogrammer.users.positions.entities.PositionEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
-import java.sql.Timestamp;
 import java.time.LocalDate;
 import java.util.Date;
 
 
 @Entity
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "users", schema = "public")
@@ -35,9 +39,15 @@ public class UserEntity {
     @Column(name = "fired_date")
     private LocalDate fired_date;
 
-    @Column(name="created_at", nullable = false)
-    private Timestamp created_at;
+    @OneToOne
+    @JoinColumn(name = "position_id", nullable = false)
+    private PositionEntity positionEntity;
 
-    @Column(name="updated_at", nullable = false)
-    private Timestamp updated_at;
+    @CreationTimestamp
+    @Column(name= "created_at", nullable = false, updatable = false)
+    private Date created_at;
+
+    @UpdateTimestamp
+    @Column(name= "updated_at", nullable = false)
+    private Date updated_at;
 }
