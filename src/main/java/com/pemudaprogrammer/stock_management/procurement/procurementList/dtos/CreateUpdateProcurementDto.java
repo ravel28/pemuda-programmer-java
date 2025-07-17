@@ -19,5 +19,6 @@ public class CreateUpdateProcurementDto {
     private String currency;
     private Float totalAmount;
     private Integer supplierId;
+    private Integer userId;
     private List<CreateUpdateProcurementItemDto> createUpdateProcurementItemDto;
 }
