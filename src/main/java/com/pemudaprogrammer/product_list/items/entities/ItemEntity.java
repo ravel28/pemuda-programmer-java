@@ -7,6 +7,10 @@ import lombok.AllArgsConstructor;
 
 import lombok.NoArgsConstructor;
 import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
+import java.util.Date;
 
 @Entity
 @AllArgsConstructor
@@ -28,5 +32,13 @@ public class ItemEntity {
     @ManyToOne
     @JoinColumn(name = "category_id", nullable = false)
     CategoriesEntity categoryEntity;
+
+    @CreationTimestamp
+    @Column(name= "created_at", nullable = false, updatable = false)
+    private Date created_at;
+
+    @UpdateTimestamp
+    @Column(name= "updated_at", nullable = false)
+    private Date updated_at;
 
 }

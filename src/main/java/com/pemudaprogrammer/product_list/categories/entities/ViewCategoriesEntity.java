@@ -5,9 +5,11 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
+import org.springframework.data.annotation.Immutable;
 
 @Entity
 @Data
+@Immutable
 @Table(name = "view_categories", schema = "public")
 public class ViewCategoriesEntity {
     @Id

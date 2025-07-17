@@ -2,9 +2,11 @@ package com.pemudaprogrammer.product_list.brands.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import org.springframework.data.annotation.Immutable;
 
 @Entity
 @Data
+@Immutable
 @Table(name = "view_brand", schema = "public")
 public class ViewBrandEntity {
     @Id

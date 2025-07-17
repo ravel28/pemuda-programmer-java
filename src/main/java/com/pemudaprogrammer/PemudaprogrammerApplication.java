@@ -6,12 +6,12 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @SpringBootApplication
 @EntityScan({
-		"com.pemudaprogrammer.items.entities",
-		"com.pemudaprogrammer.brand.entities",
-		"com.pemudaprogrammer.categories.entities",
+		"com.pemudaprogrammer.product_list.items.entities",
+		"com.pemudaprogrammer.product_list.brands.entities",
+		"com.pemudaprogrammer.product_list.categories.entities",
 		"com.pemudaprogrammer.users.entities",
-		"com.pemudaprogrammer.supplier.entities",
-		"com.pemudaprogrammer.procurement.entities",
+		"com.pemudaprogrammer.stock_management.supplier.entities",
+		"com.pemudaprogrammer.stock_management.procurement.entities",
 })
 public class PemudaprogrammerApplication {
 
